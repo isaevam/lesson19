@@ -45,7 +45,6 @@ let getQuarters = (date) => {
   const month = date.getMonth();
   const day = date.getDate();
   let quarter = "";
-  console.log(month);
   month >= 0 && month <= 2
     ? (quarter = "I quarter")
     : month >= 3 && month <= 5
@@ -55,7 +54,6 @@ let getQuarters = (date) => {
     : month >= 9 && month <= 11
     ? (quarter = "IV quarter")
     : (quarter = "Error");
-  console.log(quarter);
   const getQuarter = `${months[month]} ${day} is ${quarter}`;
   document.getElementById("outputQuarter").value = getQuarter;
 };
