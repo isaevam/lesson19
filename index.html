@@ -5,8 +5,43 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link media="all" rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <div class="container">
+    <input type="text" id="inputYear" value="2020">
+    <div class="button">
+      <button onclick="getDaysInYear(document.getElementById('inputYear').value)">Get days in year</button>
+    </div>
+    <input type="text" id="outputCountDay" value="Result">
+  </div>
+
+  <div class="container">
+    <input type="text" id="inputDate" value="2023-02-26">
+    <div class="button">
+      <button onclick="getDayNumber(document.getElementById('inputDate').value)">Get day of a year</button>
+    </div>
+    <input type="text" id="outputNumber" value="Result">
+  </div>
+
+  <div class="container">
+    <input type="text" id="inputDate_2" value="2023-02-26">
+    <div class="button">
+      <button onclick="getQuarters(document.getElementById('inputDate_2').value)">Get fiscal quarters</button>
+    </div>
+    <input type="text" id="outputQuarter" value="Result">
+  </div>
+
+  <div class="container">
+    <input type="text" id="inputFirstDate" value="2023-02-26 14:00">
+    <input type="text" id="inputSecondDate" value="2023-02-26 14:20">
+    <div class="button">
+      <button onclick="cacheFormat(document.getElementById('inputFirstDate').value,document.getElementById('inputSecondDate').value)">Calculate date diff</button>
+    </div>
+    <input type="text" id="outputDateDiff" value="Result">
+  </div>
+
   
+   <script src="./index.js" ></script>
 </body>
 </html>
